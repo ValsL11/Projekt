@@ -1,3 +1,4 @@
+  loadTasks();
 if (mainBoardElement && boardColumnsContainer) {
   addNewColumnButtonGlobal?.addEventListener('click', () => {
     const columnName = prompt('Wpisz nazwę nowej kolumny:');
@@ -24,7 +25,6 @@ if (mainBoardElement && boardColumnsContainer) {
   });
 
   loadColumns();
-  loadTasks();
   renderAllColumns();
   displayGlobalReminders();
 }
