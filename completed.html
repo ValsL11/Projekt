@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskmaster - Ukończone Zadania</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pages/completed.css" />
+    <script src="./js/global.js" defer></script>
+    <script src="./js/reminders.js" defer></script>
+    <script src="./js/tasks.js" defer></script>
+    <script src="./js/columns.js" defer></script>
+    <script src="./js/pages/completed.js" defer></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="index.html" class="back-button" aria-label="Wróć do pulpitu">
+        &#x2190;
+      </a>
+      <div class="logo-container">
+        <span class="logo-icon">⚙️</span>
+        <h1>Taskmaster</h1>
+      </div>
+    </header>
+    <div class="taskboard-container">
+      <aside class="sidebar">
+        <div class="user-profile">
+          <div class="user-icon-small">
+            <span>👤</span>
+          </div>
+          <span class="username-sidebar">User1</span>
+        </div>
+        <div class="global-reminders-panel">
+          <h2 class="reminder-title">Reminder</h2>
+          <div class="reminder-controls">
+            <button id="sortRemindersOldest" class="reminder-sort-btn">
+              Oldest
+            </button>
+            <button id="sortRemindersNewest" class="reminder-sort-btn">
+              Newest
+            </button>
+          </div>
+          <ul id="reminderListOutput"></ul>
+        </div>
+      </aside>
+      <main class="completed-tasks-container">
+        <h2>Ukończone Zadania</h2>
+        <div id="completedTasksList" class="tasks-list-completed"></div>
+      </main>
+    </div>
+  </body>
+</html>

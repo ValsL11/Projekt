@@ -1,0 +1,14 @@
+.logo-container{
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 1024px) {
+  .logo-container{
+    flex-direction: row-reverse;
+  }
+
+  .app-header .logo-icon{
+    margin-right: 0;
+    margin-left: 15px;
+  }
+}

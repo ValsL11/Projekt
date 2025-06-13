@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskmaster - Welcome</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/global.js" defer></script>
+    <script src="./js/reminders.js" defer></script>
+    <script src="./js/tasks.js" defer></script>
+    <script src="./js/columns.js" defer></script>
+    <script src="./js/pages/home.js" defer></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="logo-container">
+        <span class="logo-icon">⚙️</span>
+        <h1>Taskmaster</h1>
+      </div>
+    </header>
+    <div class="taskboard-container">
+      <aside class="sidebar">
+        <div class="user-profile">
+          <div class="user-icon-small">
+            <span>👤</span>
+          </div>
+          <span class="username-sidebar">User1</span>
+        </div>
+        <div class="global-reminders-panel">
+          <h2 class="reminder-title">REMINDER</h2>
+          <div class="reminder-controls">
+            <button id="sortRemindersOldest" class="reminder-sort-btn">
+              Oldest
+            </button>
+            <button id="sortRemindersNewest" class="reminder-sort-btn">
+              Newest
+            </button>
+          </div>
+          <ul id="reminderListOutput"></ul>
+        </div>
+      </aside>
+      <main class="welcome-container">
+        <section class="welcome-hero">
+          <div class="user-icon-large">
+            <span> 👤 </span>
+          </div>
+          <h2>Welcome to Taskmaster</h2>
+          <p class="username">User1</p>
+        </section>
+        <section class="dashboard-widgets">
+          <div class="widget account-widget">
+            <h3>Account **In build**</h3>
+            <div>
+              <button type="button">Appearance</button>
+              <button type="button">Account settings</button>
+              <button type="button">Log out</button>
+            </div>
+          </div>
+          <div class="widget board-widget">
+            <h3>Board</h3>
+            <div>
+              <a href="tasks.html" class="widget-button">My board</a>
+              <a href="completed.html" class="widget-button">Completed tasks</a>
+            </div>
+          </div>
+          <div class="widget tasks-due-widget">
+            <h3>Tasks due</h3>
+            <div class="task-count" id="activeTasksCountDisplay">0</div>
+            <a href="tasks.html" class="widget-button">See tasks</a>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
